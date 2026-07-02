@@ -85,6 +85,7 @@ export function WhyWoofi() {
                     alt={card.image.alt}
                     fill
                     sizes="(min-width: 768px) 360px, 90vw"
+                    quality={60}
                     placeholder="blur"
                     blurDataURL={card.image.blurDataURL}
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
