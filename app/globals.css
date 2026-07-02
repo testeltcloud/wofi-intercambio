@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+/* ── Tokens da marca Woofi (verde-lima + grafite) ────────────────────────── */
+@theme {
+  --color-brand: #c8f13c;
+  --color-brand-deep: #b0dc22;
+  --color-brand-soft: #eff9d0;
+
+  --color-ink: #101318;
+  --color-ink-soft: #181d24;
+  --color-ink-line: #2a313b;
+
+  --color-paper: #f7f8f2;
+  --color-mist: #ecefe3;
+  --color-line: #dfe3d4;
+
+  --color-muted: #59616d;
+  --color-muted-dark: #9aa3b0;
+
+  --font-display: var(--font-bricolage);
+  --font-sans: var(--font-inter);
+
+  --animate-marquee: marquee 55s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float 9s ease-in-out infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+}
+
+::selection {
+  background: var(--color-brand);
+  color: var(--color-ink);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+/* Âncoras não ficam escondidas atrás do header fixo */
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+/* Foco visível acessível */
+:focus-visible {
+  outline: 2px solid var(--color-brand-deep);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* FAQ: gira o ícone quando o <details> abre */
+details.faq summary::-webkit-details-marker {
+  display: none;
+}
+details.faq[open] .faq-icon {
+  transform: rotate(45deg);
+}
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+/* Marquee pausa no hover e desliga com prefers-reduced-motion */
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .marquee-track,
+  .animate-float,
+  .animate-float-slow {
+    animation: none !important;
+  }
+}
