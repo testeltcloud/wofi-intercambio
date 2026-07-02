@@ -12,7 +12,10 @@ import { CTA_URL } from "@/lib/site";
  * Sugestão de foto: intercambista sorrindo no destino, luz natural,
  * espaço vazio no lado esquerdo da composição. Formato próximo de quadrado.
  */
-const foto: { src: string; alt: string; blurDataURL?: string } | null = null;
+const foto: { src: string; alt: string; blurDataURL?: string } | null = {
+  src: "/images/Gemini_Generated_Image_97x6u97x6u97x6u9.png",
+  alt: "Intercambista sorrindo no destino, com luz natural",
+};
 
 /** Seção editorial com foto em recorte orgânico (estilo Akanji). */
 export function Manifesto() {
