@@ -15,7 +15,7 @@ const steps = [
     number: "02",
     title: "Receba e configure",
     text: "Receba o chip físico ou o eSIM e deixe a ativação programada para o dia da viagem.",
-    image: null, // placeholder de foto da marca
+    image: img.produtoWoofi,
   },
   {
     number: "03",
