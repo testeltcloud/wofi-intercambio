@@ -1,12 +1,12 @@
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { Hero } from "@/components/sections/Hero";
-import { MarqueeGallery } from "@/components/sections/MarqueeGallery";
 import { StatsStrip } from "@/components/sections/StatsStrip";
 import { WhyWoofi } from "@/components/sections/WhyWoofi";
 import { DarkBlock } from "@/components/sections/DarkBlock";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { Destinations } from "@/components/sections/Destinations";
+import { Manifesto } from "@/components/sections/Manifesto";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Faq } from "@/components/sections/Faq";
 import { FinalCta } from "@/components/sections/FinalCta";
@@ -45,12 +45,12 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <MarqueeGallery />
         <StatsStrip />
         <WhyWoofi />
         <DarkBlock />
         <HowItWorks />
         <Destinations />
+        <Manifesto />
         <Testimonials />
         <Faq />
         <FinalCta />

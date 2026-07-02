@@ -20,18 +20,35 @@ export function Destinations() {
               />
             </Reveal>
             <Reveal delay={0.12}>
-              <div className="relative mt-10 hidden overflow-hidden rounded-[2.5rem] rounded-tr-[6rem] lg:block">
-                <Parallax strength={22}>
-                  <Image
-                    src={img.placasDestinos.src}
-                    alt={img.placasDestinos.alt}
-                    width={img.placasDestinos.width}
-                    height={img.placasDestinos.height}
-                    placeholder="blur"
-                    blurDataURL={img.placasDestinos.blurDataURL}
-                    sizes="(min-width: 1024px) 420px, 0px"
-                    className="h-auto w-full scale-110 object-cover"
-                  />
+              <div className="relative mt-10 hidden lg:block">
+                <div className="overflow-hidden rounded-[2.5rem] rounded-tr-[6rem]">
+                  <Parallax strength={22}>
+                    <Image
+                      src={img.placasDestinos.src}
+                      alt={img.placasDestinos.alt}
+                      width={img.placasDestinos.width}
+                      height={img.placasDestinos.height}
+                      placeholder="blur"
+                      blurDataURL={img.placasDestinos.blurDataURL}
+                      sizes="(min-width: 1024px) 420px, 0px"
+                      className="h-auto w-full scale-110 object-cover"
+                    />
+                  </Parallax>
+                </div>
+                {/* globo sobreposto */}
+                <Parallax strength={44} className="absolute -bottom-8 -left-7 w-36">
+                  <div className="overflow-hidden rounded-[1.6rem] border-4 border-mist shadow-2xl shadow-ink/25">
+                    <Image
+                      src={img.globoNaMao.src}
+                      alt={img.globoNaMao.alt}
+                      width={img.globoNaMao.width}
+                      height={img.globoNaMao.height}
+                      placeholder="blur"
+                      blurDataURL={img.globoNaMao.blurDataURL}
+                      sizes="144px"
+                      className="h-auto w-full object-cover"
+                    />
+                  </div>
                 </Parallax>
               </div>
             </Reveal>

@@ -45,6 +45,7 @@ Deploy recomendado: [Vercel](https://vercel.com/new) (basta importar o repositó
 
 1. **`lib/site.ts`** — número de WhatsApp e `SITE_URL` (domínio real)
 2. **Foto do produto** — passo 02 de "Como funciona" tem uma caixa "FOTO AQUI" (chip/embalagem Woofi ou QR do eSIM). Troque o `PhotoPlaceholder` por `<Image>` em `components/sections/HowItWorks.tsx`
+3. **Foto da seção Manifesto** (recorte orgânico) — configure a constante `foto` no topo de `components/sections/Manifesto.tsx`
 3. **Preços dos destinos** — valores ilustrativos em `lib/destinos.ts`
 4. **Números da StatsStrip** — ilustrativos
 5. **Depoimentos** — ilustrativos; troque por reais (com autorização de uso)
