@@ -199,8 +199,8 @@ export function DarkBlock() {
 
             <ul className="mt-10 space-y-6">
               {rotinaItems.map((item, i) => (
-                <Reveal key={item.title} delay={i * 0.1}>
-                  <li className="flex items-start gap-4">
+                <li key={item.title}>
+                  <Reveal delay={i * 0.1} className="flex items-start gap-4">
                     <span className="mt-0.5 grid size-9 shrink-0 place-items-center rounded-full bg-brand font-display text-sm font-bold text-ink">
                       {i + 1}
                     </span>
@@ -208,8 +208,8 @@ export function DarkBlock() {
                       <strong className="font-semibold text-paper">{item.title}</strong>{" "}
                       {item.text}
                     </p>
-                  </li>
-                </Reveal>
+                  </Reveal>
+                </li>
               ))}
             </ul>
           </div>

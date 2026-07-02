@@ -31,7 +31,7 @@ const depoimentos = [
 
 function Stars() {
   return (
-    <div className="flex gap-1" aria-label="5 de 5 estrelas">
+    <div className="flex gap-1" role="img" aria-label="5 de 5 estrelas">
       {Array.from({ length: 5 }).map((_, i) => (
         <svg key={i} width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
           <path
