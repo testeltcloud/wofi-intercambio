@@ -1,10 +1,12 @@
 @import "tailwindcss";
 
-/* ── Tokens da marca Woofi (verde-lima + grafite) ────────────────────────── */
+/* ── Tokens da marca Woofi (índigo + grafite) ────────────────────────────── */
 @theme {
-  --color-brand: #c8f13c;
-  --color-brand-deep: #b0dc22;
-  --color-brand-soft: #eff9d0;
+  --color-brand: #3d42d4;
+  --color-brand-deep: #3438b4;
+  --color-brand-soft: #ecedfc;
+  /* variante clara para acentos sobre superfícies escuras (grafite) */
+  --color-brand-bright: #9ea1f5;
 
   --color-ink: #101318;
   --color-ink-soft: #181d24;
@@ -54,7 +56,7 @@
 
 ::selection {
   background: var(--color-brand);
-  color: var(--color-ink);
+  color: var(--color-paper);
 }
 
 html {

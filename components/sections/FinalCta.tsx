@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/motion/Reveal";
 import { img } from "@/lib/images";
-import { CTA_URL } from "@/lib/site";
+import { CTA_URL, waLink } from "@/lib/site";
 
 export function FinalCta() {
   return (
@@ -26,26 +26,28 @@ export function FinalCta() {
 
         <div className="relative mx-auto max-w-2xl">
           <Reveal>
-            <span className="inline-block rounded-full bg-brand/15 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.14em] text-brand">
-              Sua nova história começa online
+            <span className="inline-block rounded-full bg-brand/15 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.14em] text-brand-bright">
+              Cadastro gratuito para agências
             </span>
           </Reveal>
           <Reveal delay={0.08}>
             <h2 className="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight text-paper sm:text-5xl lg:text-6xl">
-              Feito para quem vai <span className="text-brand">ganhar o mundo</span>
+              Está na hora de entregar a <span className="text-brand-bright">experiência completa</span>
             </h2>
           </Reveal>
           <Reveal delay={0.16}>
             <p className="mt-6 text-lg leading-relaxed text-muted-dark">
-              Estudar fora é o começo de uma nova história. Não deixe que a falta de comunicação
-              atrapalhe os seus primeiros passos. Junte-se a milhares de intercambistas que
-              cruzaram a fronteira com a tranquilidade de quem já desembarcou online.
+              Cadastro gratuito, sem taxa de adesão e sem exclusividade. Adicione conectividade
+              global à sua prateleira e gere comissão em cada viagem que a sua agência já vende.
             </p>
           </Reveal>
           <Reveal delay={0.24}>
-            <div className="mt-10">
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <Button href={CTA_URL} external>
-                Conecte-se com a Woofi
+                Cadastre sua Agência
+              </Button>
+              <Button href={waLink("Quero falar com um especialista da Woofi")} variant="outline-light" external>
+                Falar com um especialista
               </Button>
             </div>
           </Reveal>

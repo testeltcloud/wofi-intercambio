@@ -11,7 +11,7 @@ export function SectionHeading({ eyebrow, title, sub, dark, center }: SectionHea
     <div className={`max-w-3xl ${center ? "mx-auto text-center" : ""}`}>
       <span
         className={`inline-block rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.14em] ${
-          dark ? "bg-brand/15 text-brand" : "bg-brand-soft text-ink"
+          dark ? "bg-brand/15 text-brand-bright" : "bg-brand-soft text-ink"
         }`}
       >
         {eyebrow}

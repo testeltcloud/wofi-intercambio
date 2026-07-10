@@ -5,9 +5,9 @@ import { StatsStrip } from "@/components/sections/StatsStrip";
 import { WhyWoofi } from "@/components/sections/WhyWoofi";
 import { DarkBlock } from "@/components/sections/DarkBlock";
 import { HowItWorks } from "@/components/sections/HowItWorks";
-import { Destinations } from "@/components/sections/Destinations";
+import { Coverage } from "@/components/sections/Coverage";
 import { Manifesto } from "@/components/sections/Manifesto";
-import { Testimonials } from "@/components/sections/Testimonials";
+import { Partners } from "@/components/sections/Partners";
 import { Faq } from "@/components/sections/Faq";
 import { FinalCta } from "@/components/sections/FinalCta";
 import { FAQ } from "@/lib/faq";
@@ -22,7 +22,7 @@ export default function Home() {
         name: "Woofi",
         url: SITE_URL,
         description:
-          "Chip e eSIM internacional para intercambistas: conectividade garantida antes mesmo do avião pousar.",
+          "Plataforma consolidadora de eSIM internacional para agências de viagem: cobertura em mais de 165 países, sem estoque, com comissão em cada ativação.",
         logo: `${SITE_URL}/images/hero-por-do-sol.jpg`,
       },
       {
@@ -49,9 +49,9 @@ export default function Home() {
         <WhyWoofi />
         <DarkBlock />
         <HowItWorks />
-        <Destinations />
+        <Coverage />
         <Manifesto />
-        <Testimonials />
+        <Partners />
         <Faq />
         <FinalCta />
       </main>

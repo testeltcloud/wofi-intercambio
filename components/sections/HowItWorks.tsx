@@ -7,21 +7,21 @@ import { img } from "@/lib/images";
 const steps = [
   {
     number: "01",
-    title: "Escolha seu plano",
-    text: "Selecione a cobertura ideal para o país do seu intercâmbio ainda no Brasil.",
-    image: img.bandeirasMapa,
+    title: "Sua agência acessa a plataforma",
+    text: "Cadastro gratuito e acesso imediato ao painel com todos os destinos e planos disponíveis.",
+    image: img.painelPartidas,
   },
   {
     number: "02",
-    title: "Receba e configure",
-    text: "Receba o chip físico ou o eSIM e deixe a ativação programada para o dia da viagem.",
-    image: img.produtoWoofi,
+    title: "Você oferece no fechamento",
+    text: "Antes do embarque — junto ao seguro e ao briefing final — a conectividade entra como parte natural do pacote.",
+    image: img.casalCelular,
   },
   {
     number: "03",
-    title: "Pouse conectado",
-    text: "Chegou ao destino? É só ligar o aparelho e começar a navegar instantaneamente.",
-    image: img.mochileirasEstacao,
+    title: "Cliente ativa, agência lucra",
+    text: "O cliente ativa o eSIM direto pelo celular. Você recebe a sua margem. Sem estoque, sem logística.",
+    image: img.produtoWoofi,
   },
 ];
 
@@ -34,13 +34,13 @@ export function HowItWorks() {
             eyebrow="Como funciona"
             title={
               <>
-                É mais simples do que{" "}
+                Três passos,{" "}
                 <span className="relative inline-block">
-                  você imagina
+                  nenhuma complexidade
                   <svg
                     viewBox="0 0 220 14"
                     aria-hidden="true"
-                    className="absolute -bottom-1.5 left-0 w-full text-brand"
+                    className="absolute -bottom-3 left-0 w-full text-brand"
                   >
                     <path
                       d="M4 10 C60 2 160 2 216 8"
@@ -53,7 +53,7 @@ export function HowItWorks() {
                 </span>
               </>
             }
-            sub="Três passos entre a matrícula e o primeiro story no destino."
+            sub="Do cadastro à comissão: a conectividade entra na sua venda sem atrito."
             center
           />
         </Reveal>

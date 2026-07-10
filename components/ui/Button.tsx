@@ -11,12 +11,12 @@ const base =
 
 const variants = {
   primary:
-    "bg-brand text-ink shadow-[0_10px_30px_-10px_rgba(176,220,34,0.7)] hover:bg-brand-deep",
+    "bg-brand text-white shadow-[0_10px_30px_-10px_rgba(61,66,212,0.6)] hover:bg-brand-deep",
   dark: "bg-ink text-paper hover:bg-ink-soft",
   "outline-dark":
     "border border-ink/15 text-ink hover:border-ink hover:bg-ink hover:text-paper",
   "outline-light":
-    "border border-white/25 text-paper hover:border-brand hover:text-brand",
+    "border border-white/25 text-paper hover:border-brand-bright hover:text-brand-bright",
 };
 
 export function Button({ href, children, variant = "primary", className = "", external }: ButtonProps) {

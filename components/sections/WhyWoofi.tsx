@@ -1,19 +1,31 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/motion/Reveal";
-import { img } from "@/lib/images";
-import { CTA_URL } from "@/lib/site";
 
-const cards = [
+const beneficios = [
   {
-    title: "Conectado desde a chegada",
-    text: "Desembarque, ative o chip e avise a família que você chegou bem, sem estresse.",
-    image: img.fotoCidadeCelular,
+    title: "Margem garantida",
+    text: "Margem atrativa em cada plano de conectividade vendido pela sua agência.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path
-          d="M3 21h18M5.5 17.5 3 10l2.4.8L8 13l8.2-6.6a1.8 1.8 0 0 1 2.4 2.7L12 15.5l1.2 3.4-2.5-.6"
+          d="M16 7h6v6M22 7l-8.5 8.5-5-5L2 17"
+          stroke="currentColor"
+          strokeWidth="1.9"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+  },
+  //teste
+  {
+    title: "Ampla cobertura",
+    text: "Cobertura consolidada em mais de 165 países, num só lugar.",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1.9" />
+        <path
+          d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"
           stroke="currentColor"
           strokeWidth="1.9"
           strokeLinecap="round"
@@ -23,26 +35,46 @@ const cards = [
     ),
   },
   {
-    title: "Planos flexíveis e recargas fáceis",
-    text: "Opções que se adaptam à duração e ao bolso de quem vai estudar ou trabalhar fora.",
-    image: img.roteiroTablet,
+    title: "eSIM prático",
+    text: "Ativado pelo próprio cliente, direto no celular, sem entrega física.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path
-          d="M4 7h9M4 12h16M4 17h12"
-          stroke="currentColor"
-          strokeWidth="1.9"
-          strokeLinecap="round"
-        />
-        <circle cx="17" cy="7" r="2.6" stroke="currentColor" strokeWidth="1.9" />
-        <circle cx="9" cy="17" r="2.6" stroke="currentColor" strokeWidth="1.9" />
+        <rect x="7" y="2" width="10" height="20" rx="2.5" stroke="currentColor" strokeWidth="1.9" />
+        <path d="M11 18h2" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" />
       </svg>
     ),
   },
   {
-    title: "Suporte 24h em português",
-    text: "Deu qualquer dúvida? Nossa equipe está pronta para ajudar a qualquer hora, de qualquer lugar do mundo.",
-    image: img.casalCelular,
+    title: "Risco zero",
+    text: "Zero estoque, zero risco operacional e zero custo de entrada.",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path
+          d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"
+          stroke="currentColor"
+          strokeWidth="1.9"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path d="m9 12 2 2 4-4" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "Plataforma inteligente",
+    text: "Gestão de vendas e acompanhamento das ativações em tempo real.",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <rect x="3" y="3" width="7" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.9" />
+        <rect x="14" y="3" width="7" height="5" rx="1.5" stroke="currentColor" strokeWidth="1.9" />
+        <rect x="14" y="12" width="7" height="9" rx="1.5" stroke="currentColor" strokeWidth="1.9" />
+        <rect x="3" y="16" width="7" height="5" rx="1.5" stroke="currentColor" strokeWidth="1.9" />
+      </svg>
+    ),
+  },
+  {
+    title: "Suporte 24h",
+    text: "A sua agência não precisa intermediar atendimentos técnicos — a Woofi cuida disso.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path
@@ -52,12 +84,7 @@ const cards = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-        <path
-          d="M17 18.5c0 1.4-2.2 2.5-5 2.5"
-          stroke="currentColor"
-          strokeWidth="1.9"
-          strokeLinecap="round"
-        />
+        <path d="M17 18.5c0 1.4-2.2 2.5-5 2.5" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -65,60 +92,30 @@ const cards = [
 
 export function WhyWoofi() {
   return (
-    <section id="vantagens" className="px-5 py-20 sm:px-8 md:py-28">
+    <section id="beneficios" className="px-5 py-20 sm:px-8 md:py-28">
       <div className="mx-auto w-full max-w-6xl">
         <Reveal>
           <SectionHeading
-            eyebrow="Por que a Woofi"
-            title="Por que escolher a Woofi para o seu intercâmbio?"
+            eyebrow="Vantagens"
+            title="O que muda para a sua agência?"
+            sub="Um novo produto de alta margem na sua prateleira — sem estoque, sem logística e sem complexidade técnica."
             center
           />
         </Reveal>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {cards.map((card, i) => (
-            <Reveal key={card.title} delay={i * 0.1} className="h-full">
-              <article className="group h-full overflow-hidden rounded-[2rem] border border-line bg-white transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-ink/8">
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <Image
-                    src={card.image.src}
-                    alt={card.image.alt}
-                    fill
-                    sizes="(min-width: 768px) 360px, 90vw"
-                    quality={60}
-                    placeholder="blur"
-                    blurDataURL={card.image.blurDataURL}
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <span className="absolute bottom-4 left-4 grid size-12 place-items-center rounded-xl bg-brand text-ink shadow-lg shadow-ink/20 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3">
-                    {card.icon}
-                  </span>
-                </div>
-                <div className="p-7">
-                  <h3 className="font-display text-xl font-bold leading-snug">{card.title}</h3>
-                  <p className="mt-3 leading-relaxed text-muted">{card.text}</p>
-                </div>
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {beneficios.map((card, i) => (
+            <Reveal key={card.title} delay={(i % 3) * 0.08} className="h-full">
+              <article className="group h-full rounded-[2rem] border border-line bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-deep hover:shadow-xl hover:shadow-ink/8">
+                <span className="grid size-12 place-items-center rounded-2xl bg-brand-soft text-brand-deep transition-colors duration-300 group-hover:bg-brand group-hover:text-white">
+                  {card.icon}
+                </span>
+                <h3 className="mt-5 font-display text-lg font-bold leading-snug">{card.title}</h3>
+                <p className="mt-2 leading-relaxed text-muted">{card.text}</p>
               </article>
             </Reveal>
           ))}
         </div>
-
-        <Reveal delay={0.15}>
-          <div className="mx-auto mt-14 max-w-2xl text-center">
-            <p className="text-lg leading-relaxed text-muted">
-              Não fique na mão no momento mais importante da sua jornada. Viaje conectado e foque
-              apenas no que importa:{" "}
-              <strong className="font-semibold text-ink">
-                viver a sua melhor experiência fora.
-              </strong>
-            </p>
-            <div className="mt-8">
-              <Button href={CTA_URL} external>
-                Garantir minha conexão
-              </Button>
-            </div>
-          </div>
-        </Reveal>
       </div>
     </section>
   );
