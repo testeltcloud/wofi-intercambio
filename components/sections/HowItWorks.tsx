@@ -40,7 +40,7 @@ export function HowItWorks() {
                   <svg
                     viewBox="0 0 220 14"
                     aria-hidden="true"
-                    className="absolute -bottom-1.5 left-0 w-full text-brand"
+                    className="absolute -bottom-3 left-0 w-full text-brand"
                   >
                     <path
                       d="M4 10 C60 2 160 2 216 8"

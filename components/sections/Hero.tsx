@@ -42,7 +42,7 @@ export function Hero() {
               <svg
                 viewBox="0 0 220 14"
                 aria-hidden="true"
-                className="absolute -bottom-2 left-0 w-full text-brand"
+                className="absolute -bottom-4 left-0 w-full text-brand"
               >
                 <path
                   d="M4 10 C60 2 160 2 216 8"
@@ -156,7 +156,7 @@ export function Hero() {
             className="absolute -right-4 bottom-14 max-w-[230px] animate-float-slow rounded-2xl rounded-br-md border border-white/40 bg-white/90 p-4 shadow-xl shadow-ink/10 backdrop-blur-md"
           >
             <p className="text-sm font-medium leading-snug text-ink">
-              Sua agência recebeu uma nova comissão 🎉
+              Sua agência recebeu uma nova comissão 
             </p>
             <p className="mt-1.5 flex items-center justify-end gap-1 text-[11px] font-medium text-muted">
               agora
