@@ -1,6 +1,6 @@
-# Woofi — Landing Page de Intercâmbio
+# Woofi — Landing Page para Agências (eSIM internacional)
 
-Landing page em **Next.js 16** (App Router, Turbopack) para a Woofi: chip e eSIM internacional com foco em intercambistas.
+Landing page em **Next.js 16** (App Router, Turbopack) para a Woofi: plataforma consolidadora de **eSIM internacional que agências de viagem revendem** e ganham comissão em cada ativação (público **B2B**). Cobertura em mais de 165 países, sem estoque e sem logística.
 
 ## Como rodar
 
@@ -33,35 +33,35 @@ Deploy recomendado: [Vercel](https://vercel.com/new) (basta importar o repositó
 
 | O quê | Arquivo |
 | --- | --- |
-| Link do CTA (WhatsApp/checkout) e domínio final | `lib/site.ts` |
-| Destinos e preços | `lib/destinos.ts` |
+| Link do CTA (WhatsApp / cadastro de agência) e domínio final | `lib/site.ts` |
+| Cobertura por regiões ("A Solução") | `components/sections/Coverage.tsx` |
+| Benefícios ("O que muda para sua agência") | `components/sections/WhyWoofi.tsx` |
 | Perguntas do FAQ (atualiza o JSON-LD junto) | `lib/faq.ts` |
 | Números da faixa de credibilidade | `components/sections/StatsStrip.tsx` |
-| Depoimentos | `components/sections/Testimonials.tsx` |
+| Agências parceiras (logos) | `components/sections/Partners.tsx` |
 | Textos das seções | `components/sections/*.tsx` |
 | Cores/fontes da marca | `app/globals.css` (bloco `@theme`) |
 
 ## ⚠️ Placeholders para substituir antes de publicar
 
-1. **`lib/site.ts`** — número de WhatsApp e `SITE_URL` (domínio real)
-2. **Foto do produto** — passo 02 de "Como funciona" tem uma caixa "FOTO AQUI" (chip/embalagem Woofi ou QR do eSIM). Troque o `PhotoPlaceholder` por `<Image>` em `components/sections/HowItWorks.tsx`
-3. **Foto da seção Manifesto** (recorte orgânico) — configure a constante `foto` no topo de `components/sections/Manifesto.tsx`
-3. **Preços dos destinos** — valores ilustrativos em `lib/destinos.ts`
-4. **Números da StatsStrip** — ilustrativos
-5. **Depoimentos** — ilustrativos; troque por reais (com autorização de uso)
-6. **E-mail e Instagram** no rodapé — `components/site/Footer.tsx`
-7. Depois de trocar tudo, remova os avisos "*valores ilustrativos" das seções
+1. **CTA de conversão** — hoje todos os botões ("Cadastre sua Agência", "Falar com um especialista") apontam para o **WhatsApp** (`lib/site.ts`, `WHATSAPP_PHONE` + `waLink`). Troque pela URL real de cadastro/plataforma de agências.
+2. **`SITE_URL`** em `lib/site.ts` — domínio final.
+3. **Agências parceiras** — logos e nomes ilustrativos em `components/sections/Partners.tsx`; troque pelos parceiros reais (com autorização).
+4. **Números da StatsStrip** — ilustrativos (só "165+ países" é oficial).
+5. **Foto da seção Manifesto** — configure a constante `foto` no topo de `components/sections/Manifesto.tsx`.
+6. **E-mail e Instagram** no rodapé — `components/site/Footer.tsx`.
+7. Depois de trocar tudo, remova os avisos "*ilustrativos" das seções.
 
 ## Estrutura
 
 ```
 app/            layout (fontes/SEO), page, globals.css, robots, sitemap
 components/
-  sections/     Hero, MarqueeGallery, StatsStrip, WhyWoofi, DarkBlock (roaming+rotina),
-                HowItWorks, Destinations, Testimonials, Faq, FinalCta
+  sections/     Hero, StatsStrip, WhyWoofi (Benefícios), DarkBlock (problema+portfólio),
+                HowItWorks, Coverage (A Solução), Manifesto, Partners, Faq, FinalCta
   site/         Header, Footer, Logo
   motion/       MotionRoot (Lenis+LazyMotion), Reveal, Parallax, Counter
   ui/           Button, SectionHeading, Curve, PhotoPlaceholder
-lib/            site.ts, destinos.ts, faq.ts, images.ts (fotos + blur gerados)
+lib/            site.ts, faq.ts, images.ts (fotos + blur gerados)
 public/images/  fotos otimizadas · fotos-originais/ = backups em alta
 ```

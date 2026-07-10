@@ -25,7 +25,7 @@ export function Header() {
     >
       <div className="mx-auto flex h-[4.5rem] w-full max-w-6xl items-center justify-between px-5 sm:px-8">
         <a href="#topo" aria-label="Woofi — voltar ao topo">
-          <Logo />
+          <Logo priority />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Principal">
@@ -47,7 +47,7 @@ export function Header() {
             rel="noopener noreferrer"
             className="hidden rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-paper transition-all hover:scale-[1.03] hover:bg-ink-soft sm:inline-flex"
           >
-            Esteja preparado
+            Cadastre sua Agência
           </a>
           <button
             type="button"
@@ -90,9 +90,9 @@ export function Header() {
                 href={CTA_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block rounded-full bg-brand px-5 py-3.5 text-center font-semibold text-ink"
+                className="block rounded-full bg-brand px-5 py-3.5 text-center font-semibold text-white"
               >
-                Esteja preparado
+                Cadastre sua Agência
               </a>
             </li>
           </ul>

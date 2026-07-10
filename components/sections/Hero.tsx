@@ -2,9 +2,9 @@ import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { Parallax } from "@/components/motion/Parallax";
 import { img } from "@/lib/images";
-import { CTA_URL } from "@/lib/site";
+import { CTA_URL, waLink } from "@/lib/site";
 
-const reassurance = ["Ativação em minutos", "Sem contrato de fidelidade", "Suporte em português"];
+const reassurance = ["Cadastro gratuito", "Sem estoque nem logística", "Sem fidelidade"];
 
 /**
  * Hero acima da dobra: entrada animada só com CSS (animate-fade-up),
@@ -29,15 +29,15 @@ export function Hero() {
           <div className="animate-fade-up">
             <span className="inline-flex items-center gap-2 rounded-full border border-line bg-white/60 px-4 py-2 text-sm font-semibold text-ink">
               <span className="size-2 animate-pulse rounded-full bg-brand-deep" />
-              eSIM &amp; chip internacional para intercâmbio
+              eSIM internacional para agências de viagem
             </span>
           </div>
 
-          <h1 className="animate-fade-up mt-6 font-display text-[2.9rem] font-bold leading-[1.02] tracking-tight [animation-delay:90ms] sm:text-6xl lg:text-7xl">
-            Desembarcou,
+          <h1 className="animate-fade-up mt-6 font-display text-[2.6rem] font-bold leading-[1.04] tracking-tight [animation-delay:90ms] sm:text-5xl lg:text-6xl">
+            A viagem é do passageiro.
             <br />
             <span className="relative inline-block">
-              e agora?
+              A conectividade é nossa.
               {/* sublinhado curvo */}
               <svg
                 viewBox="0 0 220 14"
@@ -56,17 +56,17 @@ export function Hero() {
           </h1>
 
           <p className="animate-fade-up mt-7 max-w-xl text-lg leading-relaxed text-muted [animation-delay:180ms] sm:text-xl">
-            Conhecer outro país é desafiador — sem conexão, pode se tornar ainda mais. Com a
-            Woofi, sua conectividade é garantida{" "}
-            <strong className="font-semibold text-ink">antes mesmo do avião pousar</strong>.
+            Com a Woofi, sua agência vende eSIM internacional, conecta viajantes no mundo todo e
+            ainda{" "}
+            <strong className="font-semibold text-ink">ganha comissão em cada ativação</strong>.
           </p>
 
           <div className="animate-fade-up mt-9 flex flex-wrap items-center gap-4 [animation-delay:270ms]">
             <Button href={CTA_URL} external>
-              Esteja preparado
+              Cadastre sua Agência
             </Button>
-            <Button href="#como-funciona" variant="outline-dark">
-              Ver como funciona
+            <Button href={waLink("Quero falar com um especialista da Woofi")} variant="outline-dark" external>
+              Falar com um especialista
             </Button>
           </div>
 
@@ -77,7 +77,7 @@ export function Hero() {
                   <circle cx="12" cy="12" r="11" className="fill-brand" />
                   <path
                     d="m7.5 12.5 3 3 6-6.5"
-                    stroke="#101318"
+                    stroke="#ffffff"
                     strokeWidth="2.2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -133,18 +133,18 @@ export function Hero() {
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                   <path
                     d="M2.8 9.2a13.2 13.2 0 0 1 18.4 0M6 12.6a8.4 8.4 0 0 1 12 0M9.2 16a3.9 3.9 0 0 1 5.6 0"
-                    stroke="#C8F13C"
+                    stroke="#9EA1F5"
                     strokeWidth="2.1"
                     strokeLinecap="round"
                   />
-                  <circle cx="12" cy="19.4" r="1.6" fill="#C8F13C" />
+                  <circle cx="12" cy="19.4" r="1.6" fill="#9EA1F5" />
                 </svg>
               </span>
               <div>
-                <p className="text-sm font-bold text-ink">Woofi eSIM</p>
+                <p className="text-sm font-bold text-ink">Nova ativação</p>
                 <p className="flex items-center gap-1.5 text-xs font-medium text-muted">
                   <span className="size-1.5 animate-pulse rounded-full bg-green-500" />
-                  Ativo no destino
+                  Cliente conectado
                 </p>
               </div>
             </div>
@@ -156,7 +156,7 @@ export function Hero() {
             className="absolute -right-4 bottom-14 max-w-[230px] animate-float-slow rounded-2xl rounded-br-md border border-white/40 bg-white/90 p-4 shadow-xl shadow-ink/10 backdrop-blur-md"
           >
             <p className="text-sm font-medium leading-snug text-ink">
-              Cheguei bem, mãe! Já estou indo pro alojamento ✈️
+              Sua agência recebeu uma nova comissão 🎉
             </p>
             <p className="mt-1.5 flex items-center justify-end gap-1 text-[11px] font-medium text-muted">
               agora

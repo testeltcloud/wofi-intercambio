@@ -5,58 +5,58 @@ import { Reveal } from "@/components/motion/Reveal";
 import { Parallax } from "@/components/motion/Parallax";
 import { img } from "@/lib/images";
 
-const roamingProblems = [
-  "Surpresa na fatura do fim do mês",
-  "Taxas escondidas e franquia estourada",
-  "Contratos longos e burocracia para cancelar",
+const semWoofi = [
+  "Cliente desembarca offline e se vira na correria",
+  "Ele compra eSIM de outra marca — a margem fica com terceiros",
+  "A reclamação de conexão volta como problema da sua agência",
 ];
 
-const woofiWins = [
-  "Preço fixo em reais, definido antes de embarcar",
-  "Sem taxas escondidas, sem contrato, sem susto",
-  "Recarga em minutos, direto do celular",
+const comWoofi = [
+  "Cliente conectado assim que o avião pousa",
+  "A comissão da conectividade fica com a sua agência",
+  "Suporte técnico 24h por conta da Woofi",
 ];
 
-const rotinaItems = [
+const portfolioItems = [
   {
-    title: "Chamar um aplicativo de transporte",
-    text: "sem depender do Wi-Fi público do aeroporto.",
+    title: "eSIM internacional em mais de 165 países",
+    text: "somado ao pacote, junto da passagem e do seguro.",
   },
   {
-    title: "Consultar o mapa e as linhas de metrô ou ônibus",
-    text: "até a sua acomodação, sem medo de se perder.",
+    title: "Ativação digital, sem estoque nem logística",
+    text: "o cliente ativa direto no celular, em minutos.",
   },
   {
-    title: "Acessar e-mails, contratos e documentos de imigração",
-    text: "na hora em que forem solicitados.",
+    title: "Painel com vendas e ativações em tempo real",
+    text: "você acompanha a operação e a margem num só lugar.",
   },
 ];
 
-/** Bloco escuro: Roaming abusivo + Do aeroporto à rotina. */
+/** Bloco escuro: problema (cliente offline) + portfólio que a agência passa a oferecer. */
 export function DarkBlock() {
   return (
     <div className="relative bg-ink text-paper">
       <Curve className="text-paper" />
 
-      {/* ── Roaming ─────────────────────────────────────────────────────── */}
-      <section id="roaming" className="px-5 pb-24 pt-14 sm:px-8 md:pb-32 md:pt-20">
+      {/* ── Problema: cliente offline ───────────────────────────────────── */}
+      <section id="problema" className="px-5 pb-24 pt-14 sm:px-8 md:pb-32 md:pt-20">
         <div className="mx-auto grid w-full max-w-6xl items-center gap-14 lg:grid-cols-2">
           <div>
             <Reveal>
               <SectionHeading
                 dark
-                eyebrow="Adeus, roaming"
+                eyebrow="O detalhe que faltava"
                 title={
                   <>
-                    Esqueça o roaming internacional{" "}
-                    <span className="text-brand">abusivo</span>
+                    Seu cliente não pode desembarcar{" "}
+                    <span className="text-brand-bright">offline</span>
                   </>
                 }
                 sub={
                   <>
-                    Ativar o chip da sua operadora local para usar no exterior é sinônimo de
-                    surpresa na fatura do fim do mês. Com a Woofi, você sabe exatamente quanto vai
-                    pagar. É a economia que o seu bolso de intercambista precisa.
+                    Sem uma solução de conectividade no fechamento, o viajante compra eSIM por conta
+                    própria — e a sua agência perde a margem e ainda herda o problema de suporte. Com
+                    a Woofi, a conexão entra no pacote e a comissão fica com você.
                   </>
                 }
               />
@@ -83,10 +83,10 @@ export function DarkBlock() {
             <Reveal delay={0.05}>
               <div className="rounded-[2rem] border border-ink-line bg-ink-soft p-8">
                 <p className="text-sm font-bold uppercase tracking-widest text-muted-dark">
-                  Roaming da operadora
+                  Sem a Woofi
                 </p>
                 <ul className="mt-5 space-y-4">
-                  {roamingProblems.map((item) => (
+                  {semWoofi.map((item) => (
                     <li key={item} className="flex items-start gap-3 text-muted-dark">
                       <svg
                         width="20"
@@ -112,15 +112,15 @@ export function DarkBlock() {
             </Reveal>
 
             <Reveal delay={0.15}>
-              <div className="relative rounded-[2rem] bg-brand p-8 text-ink shadow-[0_20px_60px_-20px_rgba(200,241,60,0.45)]">
-                <span className="absolute -top-3 right-8 rounded-full bg-ink px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-brand">
+              <div className="relative rounded-[2rem] bg-brand p-8 text-paper shadow-[0_20px_60px_-20px_rgba(61,66,212,0.5)]">
+                <span className="absolute -top-3 right-8 rounded-full bg-ink px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-brand-bright">
                   Do jeito certo
                 </span>
-                <p className="text-sm font-bold uppercase tracking-widest text-ink/60">
+                <p className="text-sm font-bold uppercase tracking-widest text-paper/70">
                   Com a Woofi
                 </p>
                 <ul className="mt-5 space-y-4">
-                  {woofiWins.map((item) => (
+                  {comWoofi.map((item) => (
                     <li key={item} className="flex items-start gap-3 font-medium">
                       <svg
                         width="20"
@@ -133,7 +133,7 @@ export function DarkBlock() {
                         <circle cx="12" cy="12" r="11" className="fill-ink" />
                         <path
                           d="m7.5 12.5 3 3 6-6.5"
-                          stroke="#C8F13C"
+                          stroke="#9EA1F5"
                           strokeWidth="2.2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -149,8 +149,8 @@ export function DarkBlock() {
         </div>
       </section>
 
-      {/* ── Rotina ──────────────────────────────────────────────────────── */}
-      <section id="rotina" className="px-5 pb-24 sm:px-8 md:pb-36">
+      {/* ── Portfólio da agência ────────────────────────────────────────── */}
+      <section id="portfolio" className="px-5 pb-24 sm:px-8 md:pb-36">
         <div className="mx-auto grid w-full max-w-6xl items-center gap-14 lg:grid-cols-2">
           {/* colagem de fotos */}
           <div className="relative mx-auto w-full max-w-[440px]">
@@ -191,17 +191,17 @@ export function DarkBlock() {
             <Reveal>
               <SectionHeading
                 dark
-                eyebrow="Primeiras horas"
-                title="Do aeroporto direto para a sua nova rotina"
-                sub="Quem faz intercâmbio sabe que as primeiras horas no país de destino são decisivas. Com internet desde o primeiro minuto, você pode:"
+                eyebrow="Portfólio completo"
+                title="O detalhe que faltava na sua entrega"
+                sub="Com poucos cliques, a sua agência passa a oferecer conectividade global como parte natural do pacote de viagem:"
               />
             </Reveal>
 
             <ul className="mt-10 space-y-6">
-              {rotinaItems.map((item, i) => (
+              {portfolioItems.map((item, i) => (
                 <li key={item.title}>
                   <Reveal delay={i * 0.1} className="flex items-start gap-4">
-                    <span className="mt-0.5 grid size-9 shrink-0 place-items-center rounded-full bg-brand font-display text-sm font-bold text-ink">
+                    <span className="mt-0.5 grid size-9 shrink-0 place-items-center rounded-full bg-brand font-display text-sm font-bold text-white">
                       {i + 1}
                     </span>
                     <p className="text-lg leading-relaxed text-muted-dark">

@@ -10,7 +10,7 @@ import { img } from "@/lib/images";
  * 1. Coloque seu arquivo em /public/images (ex.: manifesto.jpg)
  * 2. Troque `null` por: { src: "/images/manifesto.jpg", alt: "descrição da foto" }
  *    (ou use uma foto existente: importe `img` de "@/lib/images" e passe img.casalCelular)
- * Sugestão de foto: intercambista sorrindo no destino, luz natural,
+ * Sugestão de foto: viajante sorrindo no destino, luz natural,
  * espaço vazio no lado esquerdo da composição. Formato próximo de quadrado.
  */
 const foto: { src: string; alt: string; blurDataURL?: string } | null = img.manifesto;
@@ -39,20 +39,20 @@ export function Manifesto() {
         <div className="max-w-lg">
           <Reveal>
             <p className="text-lg font-medium leading-relaxed text-muted">
-              Feita para intercambistas, por quem sabe o peso de desembarcar sozinho em outro
-              país.
+              Feita para agências que querem entregar uma experiência completa, do embarque ao
+              retorno.
             </p>
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="mt-6 font-display text-4xl font-bold leading-[1.06] tracking-tight sm:text-5xl">
-              A ponte entre a sua nova vida e{" "}
-              <span className="text-brand-deep">todo mundo que torce por você.</span>
+              A conectividade deixou de ser um detalhe da viagem.{" "}
+              <span className="text-brand-deep">Hoje, é essencial na experiência do viajante.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
             <div className="mt-9">
               <Button href={CTA_URL} external>
-                Saiba mais
+                Cadastre sua Agência
               </Button>
             </div>
           </Reveal>
@@ -79,7 +79,7 @@ export function Manifesto() {
               ) : (
                 /* PLACEHOLDER — troque pela sua foto na constante `foto` no topo deste arquivo */
                 <div className="flex size-full flex-col items-center justify-center gap-3 bg-[repeating-linear-gradient(45deg,#ecefe3,#ecefe3_16px,#e3e7d6_16px,#e3e7d6_32px)] p-8 text-center">
-                  <span className="rounded-full bg-brand px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-ink">
+                  <span className="rounded-full bg-brand px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-white">
                     Foto aqui
                   </span>
                   <svg width="38" height="38" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-ink/40">
@@ -91,7 +91,7 @@ export function Manifesto() {
                     <circle cx="12" cy="12.5" r="3.2" stroke="currentColor" strokeWidth="1.6" />
                   </svg>
                   <p className="max-w-[30ch] pl-16 text-sm leading-snug text-muted sm:pl-24">
-                    Intercambista sorrindo no destino, luz natural, formato quase quadrado.
+                    Viajante sorrindo no destino, luz natural, formato quase quadrado.
                     Configure em <code>components/sections/Manifesto.tsx</code>
                   </p>
                 </div>

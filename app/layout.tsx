@@ -19,17 +19,17 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Woofi — Chip e eSIM internacional para o seu intercâmbio",
+    default: "Woofi — Plataforma de eSIM internacional para agências de viagem",
     template: "%s | Woofi",
   },
   description:
-    "Desembarque conectado no seu intercâmbio: eSIM e chip internacional com ativação antes do embarque, preço fixo sem sustos e suporte 24h em português.",
+    "Sua agência vende eSIM internacional com cobertura em mais de 165 países, conecta os viajantes e ganha comissão em cada ativação. Zero estoque, zero risco, cadastro gratuito.",
   keywords: [
-    "chip internacional",
-    "eSIM intercâmbio",
-    "chip para intercâmbio",
-    "internet no exterior",
-    "eSIM viagem",
+    "eSIM para agências",
+    "conectividade para agências de viagem",
+    "revenda de eSIM internacional",
+    "eSIM internacional",
+    "plataforma de conectividade",
     "Woofi",
   ],
   alternates: { canonical: "/" },
@@ -38,16 +38,16 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: SITE_URL,
     siteName: "Woofi",
-    title: "Woofi — Desembarque conectado no seu intercâmbio",
+    title: "Woofi — eSIM internacional para a sua agência vender",
     description:
-      "eSIM e chip internacional para quem vai estudar fora: ativação antes do embarque, preço fixo e suporte 24h em português.",
+      "A viagem é do passageiro. A conectividade é nossa. Sua agência distribui eSIM em 165+ países e gera comissão em cada ativação — sem estoque e sem logística.",
     images: [{ url: "/images/hero-por-do-sol.jpg", width: 1650, height: 2200 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Woofi — Desembarque conectado no seu intercâmbio",
+    title: "Woofi — eSIM internacional para a sua agência vender",
     description:
-      "eSIM e chip internacional para quem vai estudar fora: ativação antes do embarque, preço fixo e suporte 24h em português.",
+      "Sua agência vende eSIM em 165+ países e ganha comissão em cada ativação — zero estoque, zero risco.",
   },
   robots: { index: true, follow: true },
 };
