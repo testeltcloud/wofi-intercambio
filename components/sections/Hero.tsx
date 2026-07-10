@@ -77,7 +77,7 @@ export function Hero() {
                   <circle cx="12" cy="12" r="11" className="fill-brand" />
                   <path
                     d="m7.5 12.5 3 3 6-6.5"
-                    stroke="#101318"
+                    stroke="#ffffff"
                     strokeWidth="2.2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -133,11 +133,11 @@ export function Hero() {
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                   <path
                     d="M2.8 9.2a13.2 13.2 0 0 1 18.4 0M6 12.6a8.4 8.4 0 0 1 12 0M9.2 16a3.9 3.9 0 0 1 5.6 0"
-                    stroke="#C8F13C"
+                    stroke="#9EA1F5"
                     strokeWidth="2.1"
                     strokeLinecap="round"
                   />
-                  <circle cx="12" cy="19.4" r="1.6" fill="#C8F13C" />
+                  <circle cx="12" cy="19.4" r="1.6" fill="#9EA1F5" />
                 </svg>
               </span>
               <div>

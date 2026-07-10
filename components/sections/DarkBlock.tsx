@@ -49,7 +49,7 @@ export function DarkBlock() {
                 title={
                   <>
                     Esqueça o roaming internacional{" "}
-                    <span className="text-brand">abusivo</span>
+                    <span className="text-brand-bright">abusivo</span>
                   </>
                 }
                 sub={
@@ -112,11 +112,11 @@ export function DarkBlock() {
             </Reveal>
 
             <Reveal delay={0.15}>
-              <div className="relative rounded-[2rem] bg-brand p-8 text-ink shadow-[0_20px_60px_-20px_rgba(200,241,60,0.45)]">
-                <span className="absolute -top-3 right-8 rounded-full bg-ink px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-brand">
+              <div className="relative rounded-[2rem] bg-brand p-8 text-paper shadow-[0_20px_60px_-20px_rgba(61,66,212,0.5)]">
+                <span className="absolute -top-3 right-8 rounded-full bg-ink px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-brand-bright">
                   Do jeito certo
                 </span>
-                <p className="text-sm font-bold uppercase tracking-widest text-ink/60">
+                <p className="text-sm font-bold uppercase tracking-widest text-paper/70">
                   Com a Woofi
                 </p>
                 <ul className="mt-5 space-y-4">
@@ -133,7 +133,7 @@ export function DarkBlock() {
                         <circle cx="12" cy="12" r="11" className="fill-ink" />
                         <path
                           d="m7.5 12.5 3 3 6-6.5"
-                          stroke="#C8F13C"
+                          stroke="#9EA1F5"
                           strokeWidth="2.2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -201,7 +201,7 @@ export function DarkBlock() {
               {rotinaItems.map((item, i) => (
                 <li key={item.title}>
                   <Reveal delay={i * 0.1} className="flex items-start gap-4">
-                    <span className="mt-0.5 grid size-9 shrink-0 place-items-center rounded-full bg-brand font-display text-sm font-bold text-ink">
+                    <span className="mt-0.5 grid size-9 shrink-0 place-items-center rounded-full bg-brand font-display text-sm font-bold text-white">
                       {i + 1}
                     </span>
                     <p className="text-lg leading-relaxed text-muted-dark">

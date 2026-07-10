@@ -20,7 +20,7 @@ export function PhotoPlaceholder({
     <div
       className={`relative flex ${ratioClass} w-full flex-col items-center justify-center gap-3 overflow-hidden rounded-[2rem] border-2 border-dashed border-ink/20 bg-[repeating-linear-gradient(45deg,transparent,transparent_14px,rgba(16,19,24,0.03)_14px,rgba(16,19,24,0.03)_28px)] p-6 text-center ${className}`}
     >
-      <span className="rounded-full bg-brand px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-ink">
+      <span className="rounded-full bg-brand px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-white">
         Foto aqui
       </span>
       <svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-ink/40">

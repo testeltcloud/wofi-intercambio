@@ -90,7 +90,7 @@ export function WhyWoofi() {
                     blurDataURL={card.image.blurDataURL}
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <span className="absolute bottom-4 left-4 grid size-12 place-items-center rounded-xl bg-brand text-ink shadow-lg shadow-ink/20 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3">
+                  <span className="absolute bottom-4 left-4 grid size-12 place-items-center rounded-xl bg-brand text-white shadow-lg shadow-ink/20 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3">
                     {card.icon}
                   </span>
                 </div>

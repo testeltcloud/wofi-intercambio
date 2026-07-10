@@ -85,21 +85,6 @@ export function Destinations() {
                 </Reveal>
               ))}
             </div>
-            <Reveal delay={0.1}>
-              <p className="mt-6 text-sm text-muted">
-                *Valores ilustrativos — edite em <code>lib/destinos.ts</code>. Não achou seu
-                destino?{" "}
-                <a
-                  href={CTA_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold text-ink underline decoration-brand decoration-2 underline-offset-4 hover:text-brand-deep"
-                >
-                  Fale com a gente
-                </a>
-                .
-              </p>
-            </Reveal>
           </div>
         </div>
       </div>

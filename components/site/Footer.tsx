@@ -19,7 +19,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2.5">
               {NAV_LINKS.map((l) => (
                 <li key={l.href}>
-                  <a href={l.href} className="text-paper/80 transition-colors hover:text-brand">
+                  <a href={l.href} className="text-paper/80 transition-colors hover:text-brand-bright">
                     {l.label}
                   </a>
                 </li>
@@ -31,18 +31,18 @@ export function Footer() {
             <p className="text-sm font-bold uppercase tracking-widest text-muted-dark">Contato</p>
             <ul className="mt-4 space-y-2.5 text-paper/80">
               <li>
-                <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-brand">
+                <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-brand-bright">
                   WhatsApp — fale com a gente
                 </a>
               </li>
               {/* PLACEHOLDER: e-mail e redes sociais reais */}
               <li>
-                <a href="mailto:contato@woofi.com.br" className="transition-colors hover:text-brand">
+                <a href="mailto:contato@woofi.com.br" className="transition-colors hover:text-brand-bright">
                   contato@woofi.com.br
                 </a>
               </li>
               <li>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-brand">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-brand-bright">
                   Instagram
                 </a>
               </li>

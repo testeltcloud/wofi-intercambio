@@ -33,6 +33,7 @@ export const metadata: Metadata = {
     "Woofi",
   ],
   alternates: { canonical: "/" },
+  icons: { icon: "/logobrowser.svg", shortcut: "/logobrowser.svg" },
   openGraph: {
     type: "website",
     locale: "pt_BR",

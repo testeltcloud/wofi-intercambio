@@ -26,13 +26,13 @@ export function FinalCta() {
 
         <div className="relative mx-auto max-w-2xl">
           <Reveal>
-            <span className="inline-block rounded-full bg-brand/15 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.14em] text-brand">
+            <span className="inline-block rounded-full bg-brand/15 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.14em] text-brand-bright">
               Sua nova história começa online
             </span>
           </Reveal>
           <Reveal delay={0.08}>
             <h2 className="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight text-paper sm:text-5xl lg:text-6xl">
-              Feito para quem vai <span className="text-brand">ganhar o mundo</span>
+              Feito para quem vai <span className="text-brand-bright">ganhar o mundo</span>
             </h2>
           </Reveal>
           <Reveal delay={0.16}>

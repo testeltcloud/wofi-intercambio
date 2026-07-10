@@ -79,7 +79,7 @@ export function Manifesto() {
               ) : (
                 /* PLACEHOLDER — troque pela sua foto na constante `foto` no topo deste arquivo */
                 <div className="flex size-full flex-col items-center justify-center gap-3 bg-[repeating-linear-gradient(45deg,#ecefe3,#ecefe3_16px,#e3e7d6_16px,#e3e7d6_32px)] p-8 text-center">
-                  <span className="rounded-full bg-brand px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-ink">
+                  <span className="rounded-full bg-brand px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-white">
                     Foto aqui
                   </span>
                   <svg width="38" height="38" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-ink/40">

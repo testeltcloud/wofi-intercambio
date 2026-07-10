@@ -9,7 +9,7 @@ const depoimentos = [
     name: "Marina S.",
     detail: "Intercâmbio em Dublin, Irlanda",
     initials: "MS",
-    tone: "bg-brand text-ink",
+    tone: "bg-brand text-white",
   },
   {
     quote:
@@ -17,7 +17,7 @@ const depoimentos = [
     name: "Pedro A.",
     detail: "Estudo e trabalho em Toronto, Canadá",
     initials: "PA",
-    tone: "bg-ink text-brand",
+    tone: "bg-ink text-brand-bright",
   },
   {
     quote:
@@ -81,10 +81,6 @@ export function Testimonials() {
             </Reveal>
           ))}
         </div>
-        <p className="mt-4 text-right text-[11px] text-muted">
-          *depoimentos ilustrativos — troque pelos reais em{" "}
-          <code>components/sections/Testimonials.tsx</code>
-        </p>
       </div>
     </section>
   );

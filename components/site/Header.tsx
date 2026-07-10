@@ -90,7 +90,7 @@ export function Header() {
                 href={CTA_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block rounded-full bg-brand px-5 py-3.5 text-center font-semibold text-ink"
+                className="block rounded-full bg-brand px-5 py-3.5 text-center font-semibold text-white"
               >
                 Esteja preparado
               </a>
