@@ -17,6 +17,7 @@ const beneficios = [
       </svg>
     ),
   },
+  //teste
   {
     title: "Ampla cobertura",
     text: "Cobertura consolidada em mais de 165 países, num só lugar.",
